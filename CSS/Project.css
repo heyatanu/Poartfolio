@@ -1,0 +1,23 @@
+#project{
+    background-color: black;
+    display: block;
+} 
+.project_contant{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+    display: none;
+}
+#project_loading{
+    width: 30%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#projectP{
+    font-weight: 500;
+    font-size: 15px;
+    color: whitesmoke;
+    text-align: left!important;
+}

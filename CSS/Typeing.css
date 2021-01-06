@@ -1,0 +1,20 @@
+.text_area{
+    padding: 18px;
+}
+#divContainer .vscode-mockup .text_area h3{
+    font-size: 13px!important;
+    font-weight: 500!important;
+    color: rgba(218, 245, 17, 0.861);
+}
+#divContainer .vscode-mockup .text_area p{
+    font-size: 13px!important;
+    font-weight: 500!important;
+    color: rgba(17, 183, 198, 0.729);
+    line-height: 2;
+    word-spacing: 4px;
+} 
+#welcometxtmsg{
+    text-shadow: 0 0 10px #00d5ff;  
+    color: #fff;
+    font-weight: 500;
+}

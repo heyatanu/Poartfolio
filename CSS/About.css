@@ -1,0 +1,75 @@
+/* #about_boot{
+  display: none;
+} */
+#about{
+    background-color: black;
+    display: none;
+} 
+.about_contant{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+}
+#about_loading{
+    width: 30%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about_contant img{
+    width: 50%;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+#about_name {
+    animation:  shake 0.8s infinite; 
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 20px #00ff1e;    
+    cursor: pointer;
+}
+
+
+#about_dis{ 
+    animation:  shake2 0.8s infinite;
+    font-weight: 500;
+    font-size: 13px;
+    color: aqua;
+    text-shadow: 0 0 20px #00d5ff;  
+}
+#about_name:hover{
+    transform: scale(2);
+}
+@keyframes shake{ 
+    0%{ 
+      transform: translateX(0) 
+    } 
+    25%{ 
+      transform: translateX(5px); 
+    } 
+      
+    50%{ 
+      transform: translateX(-5px); 
+    } 
+    100%{ 
+      transform: translateX(0px); 
+    } 
+  } 
+
+  @keyframes shake2{ 
+    0%{ 
+      transform: translateX(0) 
+    } 
+    25%{ 
+      transform: translateX(-5px); 
+    } 
+      
+    50%{ 
+      transform: translateX(+5px); 
+    } 
+    100%{ 
+      transform: translateX(0px); 
+    } 
+  } 

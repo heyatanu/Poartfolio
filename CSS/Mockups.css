@@ -1,0 +1,95 @@
+
+
+
+ /* .browser-mockup {
+    border-top: 2em solid rgba(230, 230, 230, 0.7);
+    box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+    position: relative;
+    border-radius: 3px 3px 0 0
+  } */
+  
+  /* .browser-mockup:before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: -1.25em;
+    left: 1em;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: #f44;
+    box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
+  } */
+  /* .browser-mockup::after {
+    display: block;
+    position: absolute;
+    content: 'Welcome';
+    font-weight: 550;
+    top: -1.5em;
+    left: 16em;
+    text-align: center;
+  }
+   */
+  
+  
+  .browser-mockup > * {
+    display: block;
+  }
+  
+  /* Custom code for the demo */
+  
+  body {
+    background: linear-gradient(to right, #8e44ad, #c0392b);
+    display: flex;
+  }
+  
+  .browser-mockup {
+    flex: 1;
+  }
+  
+
+
+
+
+
+
+  /* VS CODE MOCKUP CSS START */
+
+.vscode-mockup{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+  border-radius: 3px 3px 0 0;
+}
+.top_bar{
+  width: 100%;
+  height: 20px;
+  background: rgba(51, 50, 50, 0.7);
+  display: flex;
+
+}
+
+.item1{
+  padding: 3px;
+}
+.dot {
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: alias;
+}
+.item2 ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+.item2 ul li{
+float: left;
+padding: 2px;
+padding-left: 17px;
+color: whitesmoke;
+cursor: pointer;
+}

@@ -1,0 +1,24 @@
+/* #education_boot{
+    display: none;
+} */
+#education{
+    background-color: black;
+    display: none;
+}
+#education_loading{
+    width: 30%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.education_contant{
+    display: none;
+    text-align: center;
+    padding: 7px;
+}
+#educationP{
+    font-weight: 500;
+    font-size: 15px;
+    color: whitesmoke;
+    text-align: left!important;
+}

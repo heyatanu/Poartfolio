@@ -1,0 +1,46 @@
+#skills{
+    background-color: black;
+    display: block;
+    text-align: center;
+} 
+.skills_contant{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+    display: none;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+#skills_loading{
+    width: 30%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#skills_contant > div {
+    text-align: center;
+    padding: 30px!important;
+    animation:  shake2 0.8s infinite;
+  }
+  #skills_contant div span {
+color: rebeccapurple!important;
+  }
+.slills_icon{
+      width: auto!important;
+      max-width: 50%;
+      cursor: pointer!important;
+
+  }
+  .slills_icon:hover{
+      transform: scale(1.2);
+      transition: transform .2s; /* Animation */
+  }
+
+#skillP{
+    font-weight: 500;
+    font-size: 15px;
+    color: whitesmoke;
+    text-align: left!important;
+}

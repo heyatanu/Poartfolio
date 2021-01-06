@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CODEING</title>
+    <meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/Mockups.css">
+    <link rel="stylesheet" href="CSS/Navbar.css">
+    <link rel="stylesheet" href="CSS/Typeing.css">
+    <link rel="stylesheet" href="CSS/Chrome.css">
+    <link rel="stylesheet" href="CSS/About.css">
+    <link rel="stylesheet" href="CSS/Education.css">
+    <link rel="stylesheet" href="CSS/Media.css">
+    <link rel="stylesheet" href="CSS/Project.css">
+    <link rel="stylesheet" href="CSS/Skills.css">
+    <link rel="stylesheet" href="CSS/Contact.css">
+    <link rel="stylesheet" href="CSS/Snackbar.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+    <style>
+
+        #divContainer { 
+            border:dashed 1px #CCC; 
+            width: 100%;
+            height:fit-content; 
+            font:13px Arial; 
+            cursor:move;
+            float: left;   
+            z-index: 999;
+        } 
+        #divResize { 
+            border:dashed 1px #CCC; 
+            width:100%; 
+            height:fit-content; 
+            font:13px Arial; 
+            cursor:move; 
+            float: right;
+            z-index: 999;
+           
+        } 
+        #about { 
+            border:dashed 1px #CCC; 
+            width:400px; 
+            height:fit-content; 
+            font:13px Arial; 
+            cursor:move; 
+            float: right;
+        } 
+        #education { 
+            border:dashed 1px #CCC; 
+            width:400px; 
+            height:fit-content; 
+            font:13px Arial; 
+            cursor:move; 
+            float: right;
+        } 
+        #project { 
+            border:dashed 1px #CCC; 
+            width:400px; 
+            height:fit-content; 
+            font:13px Arial; 
+            cursor:move; 
+            float: right;
+            display: none;
+        } 
+        #skills { 
+            border:dashed 1px #CCC; 
+            width:400px; 
+            height:fit-content; 
+            font:13px Arial; 
+            cursor:move; 
+            display: none;
+            float: right;
+        } 
+        #contact { 
+            border:dashed 1px #CCC; 
+            width:550px; 
+            height:fit-content; 
+            font:13px Arial; 
+            cursor:move; 
+            display: none;
+            float: right;
+        } 
+    </style>
+</head>
+<body>
+
+
+    <div id="snackbar">Some text some message..</div>
+    <div class="navbar_div">
+        <a href="#home" class="welcome t_o_g">Home</a>
+        <a href="#about"class="about_cls t_o_g">About</a>
+        <a href="#education" class="education_cls t_o_g">Education</a>
+        <a href="#project" class="project_cls t_o_g">Project</a>
+        <a href="#skills" class="skills_cls t_o_g">Skills</a>
+        <a href="#contact" class="contact_cls t_o_g">Contact</a>
+        <!-- <a href="#contact" onclick="snackbar_alert()">Contact</a> -->
+   
+        <a href="#conact" id=t_o_g_id>^</a>
+      </div>
+      
+
+
+      
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 fst">
+                    <div id="divResize">
+                        <div class="browser-mockup ">
+                            <div class="top_bar" style="padding:5px;height: max-content;">
+                                <div class="item1">
+                                    <span class="welcome dot" style="background-color:#f44;"></span>
+                                    <span class="dot" style="background-color:#9b3;"></span>
+                                    <span class="dot" style="background-color:#fb5;"></span>
+                                </div>
+                                <!-- <div class="item3"><img src="IMAGES/Logo/visual-studio.png" alt="VISUAL TUDIO LOGO"></div> -->
+                                <div class="item2" style="width: 80%;">
+                                    <input type="text" value="&#9888; Not Secure | http://127.0.0.1:127/project/index.html#home" class="search_bar" readonly>
+                                </div>
+                            </div>
+                            <img src="IMAGES/hack.gif" id="hacking">
+                            <img id="loading" src="IMAGES/n.gif">
+                            <p class="glow" id="glow"></p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12" >
+                    <div id="divContainer"> <!--VS CODE-->
+                        <div class="vscode-mockup">
+                            <div class="top_bar">
+                                <div class="item1">
+                                    <span class=" dot" style="background-color:#f44;"></span>
+                                    <span class=" dot" style="background-color:#9b3;"></span>
+                                    <span class=" dot" style="background-color:#fb5;"></span>
+                                </div>
+                                <!-- <div class="item3"><img src="IMAGES/Logo/visual-studio.png" alt="VISUAL TUDIO LOGO"></div> -->
+                                <div class="item2">
+                                    <ul>
+                                        <li>File</li>
+                                        <li>Edit</li>
+                                        <li>Selection</li>
+                                        <li>View</li>
+                                        <li>Go</li>
+                                        <li>Run</li>
+                                        <li>Terminal</li>
+                                        <li>Help</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text_area">
+                                <h3 id="pathtxtmsg"></h3>
+                                <p id="welcometxtmsg"></p>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="about_boot">
+            <div id="about">
+                <div class="browser-mockup ">
+                    <div class="top_bar" style="padding:5px;height: max-content;">
+                        <div class="item1">
+                            <span class="about_cls dot" style="background-color:#f44;"></span>
+                            <span class="about_cls dot" style="background-color:#9b3;"></span>
+                            <span class="about_cls dot" style="background-color:#fb5;"></span>
+                        </div>
+                        <div class="item2">
+                            <input type="text" value="&#9888; Not Secure | #about" class="search_bar" readonly>
+                        </div>
+                    </div>
+                    <img id="about_loading" src="IMAGES/n.gif">
+                    <div class="about_contant">
+                        <img src="IMAGES/hack.gif"  alt="" srcset="">
+                        <h1 id="about_name"></h1>
+                        <p id="about_dis"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+
+
+        <div id="education_boot">
+            <div id="education">
+                <div class="browser-mockup ">
+                    <div class="top_bar" style="padding:5px;height: max-content;">
+                        <div class="item1">
+                            <span class="education_cls dot" style="background-color:#f44;"></span>
+                            <span class="education_cls dot" style="background-color:#9b3;"></span>
+                            <span class="education_cls dot" style="background-color:#fb5;"></span>
+                        </div>
+                        <div class="item2">
+                            <input type="text" value="&#9888; Not Secure | #education" class="search_bar" readonly>
+                        </div>
+                    </div>
+                    <img id="education_loading" src="IMAGES/n.gif">
+                    <p id="educationP"></p>
+                    <div class="education_contant">
+                        <div id="accordion">
+                            <h3>Future Institue Of Engineering And Management</h3>
+                            <div class="according_contant">
+                              <p>Mauris mauris ante, blandit et, ultrices a, susceros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                            </div>
+                            ^
+                            <h3>Manbazar Radha Madhab Institute</h3>
+                            <div class="according_contant">
+                              <p>Sed rerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+                            </div>
+                            ^
+                            <h3>Manbazar Radha Madhab Institute</h3>
+                            <div class="according_contant">
+                              <p>Nam enim risus, c libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="project_boot">
+            <div id="project">
+                <div class="browser-mockup ">
+                    <div class="top_bar" style="padding:5px;height: max-content;">
+                        <div class="item1">
+                            <span class="project_cls dot" style="background-color:#f44;"></span>
+                            <span class="project_cls dot" style="background-color:#9b3;"></span>
+                            <span class="project_cls dot" style="background-color:#fb5;"></span>
+                        </div>
+                        <div class="item2">
+                            <input type="text" value="&#9888; Not Secure | #project" class="search_bar" readonly>
+                        </div>
+                    </div>
+                    <img id="project_loading" src="IMAGES/n.gif">
+                    <p id="projectP"></p>
+                    <div class="project_contant">
+                        <div id="project_accordion">
+                            <h3>Section 1</h3>
+                            <div>
+                              <p>Mauris mauris ante, blandit et, ultrices a, susceros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                            </div>
+                            <h3>Section 2</h3>
+                            <div>
+                              <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+                            </div>
+                            <h3>Section 3</h3>
+                            <div>
+                              <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pell
+                                us, mole porta ac, alinte aliquam nisi, eu iaculis leo purus venenatis dui. 
+                                </p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="skills_boot">
+            <div id="skills">
+                <div class="browser-mockup ">
+                    <div class="top_bar" style="padding:5px;height: max-content;">
+                        <div class="item1">
+                            <span class="skills_cls dot" style="background-color:#f44;"></span>
+                            <span class="skills_cls dot" style="background-color:#9b3;"></span>
+                            <span class="skills_cls dot" style="background-color:#fb5;"></span>
+                        </div>
+                        <div class="item2">
+                            <input type="text" value="&#9888; Not Secure | #skills" class="search_bar" readonly>
+                        </div>
+                    </div>
+                    <img id="skills_loading" src="IMAGES/n.gif">
+                    <p id="skillP"></p>
+                    <div class="skills_contant">
+                        <div><img class="slills_icon"src="IMAGES/icons/c.png" alt="SKILLS ICONS"><p  style="color: rgba(150, 180, 150, 0.757); font-weight: 550;padding: 5px;">ata</p></div>
+                        <div><img class="slills_icon"src="IMAGES/icons/bootstrap.png" alt="SKILLS ICONS"><p  style="color: rgba(150, 180, 150, 0.757); font-weight: 550;padding: 5px;">ata</p></div>
+                        <div><img class="slills_icon"src="IMAGES/icons/css.png" alt="SKILLS ICONS"><p  style="color: rgba(150, 180, 150, 0.757); font-weight: 550;padding: 5px;">ata</p></div>  
+                        <div><img class="slills_icon"src="IMAGES/icons/expressjs.png" alt="SKILLS ICONS"><p  style="color: rgba(150, 180, 150, 0.757); font-weight: 550;padding: 5px;">ata</p></div>
+                        <div><img class="slills_icon"src="IMAGES/icons/forwarding.png" alt="SKILLS ICONS"><p  style="color: rgba(150, 180, 150, 0.757); font-weight: 550;padding: 5px;">ata</p></div>
+                        <div><img class="slills_icon"src="IMAGES/icons/html.png" alt="SKILLS ICONS"><p  style="color: rgba(150, 180, 150, 0.757); font-weight: 550;padding: 5px;">ata</p></div>
+                        <div><img class="slills_icon"src="IMAGES/icons/java.png" alt="SKILLS ICONS"><p  style="color: rgba(150, 180, 150, 0.757); font-weight: 550;padding: 5px;">ata</p></div>
+                        <div><img class="slills_icon"src="IMAGES/icons/javascript.png" alt="SKILLS ICONS"><p  style="color: rgba(150, 180, 150, 0.757); font-weight: 550;padding: 5px;">ata</p></div>
+                        <div><img class="slills_icon"src="IMAGES/icons/jquery.png" alt="SKILLS ICONS"><p  style="color: rgba(150, 180, 150, 0.757); font-weight: 550;padding: 5px;">ata</p></div>
+                        <div><img class="slills_icon"src="IMAGES/icons/mongodb.png" alt="SKILLS ICONS"><p  style="color: rgba(150, 180, 150, 0.757); font-weight: 550;padding: 5px;">ata</p></div>
+                        <div><img class="slills_icon"src="IMAGES/icons/mysql.png" alt="SKILLS ICONS"><p  style="color: rgba(150, 180, 150, 0.757); font-weight: 550;padding: 5px;">ata</p></div>
+                        <div><img class="slills_icon"src="IMAGES/icons/node.png" alt="SKILLS ICONS"><p  style="color: rgba(150, 180, 150, 0.757); font-weight: 550;padding: 5px;">ata</p></div>
+                        <div><img class="slills_icon"src="IMAGES/icons/php.png" alt="SKILLS ICONS"><p  style="color: rgba(150, 180, 150, 0.757); font-weight: 550;padding: 5px;">ata</p></div>
+                        <div><img class="slills_icon"src="IMAGES/icons/python.png" alt="SKILLS ICONS"><p  style="color: rgba(150, 180, 150, 0.757); font-weight: 550;padding: 5px;">ata</p></div>
+                        <div><img class="slills_icon"src="IMAGES/icons/reactjs.png" alt="SKILLS ICONS"><p  style="color: rgba(150, 180, 150, 0.757); font-weight: 550;padding: 5px;">ata</p></div>
+                        <div><img class="slills_icon"src="IMAGES/icons/wordpress.png" alt="SKILLS ICONS"><p  style="color: rgba(150, 180, 150, 0.757); font-weight: 550;padding: 5px;">ata</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="contact_boot">
+            <div id="contact">
+                <div class="browser-mockup ">
+                    <div class="top_bar" style="padding:5px;height: max-content;">
+                        <div class="item1">
+                            <span class="contact_cls dot" style="background-color:#f44;"></span>
+                            <span class="contact_cls dot" style="background-color:#9b3;"></span>
+                            <span class="contact_cls dot" style="background-color:#fb5;"></span>
+                        </div>
+                        <div class="item2">
+                            <input type="text" value="&#9888; Not Secure | #contact" class="search_bar" readonly>
+                        </div>
+                    </div>
+                    <img id="contact_loading" src="IMAGES/n.gif">
+                    <p id="contactP"></p>
+                    <div class="contact_contant">
+                        <div class="wrapper">
+                            <div class="button">
+                              <div class="icon">
+                      <i class="fab fa-facebook-f"></i></div>
+                      <span>Facebook</span>
+                            </div>
+                      <div class="button">
+                              <div class="icon">
+                      <i class="fab fa-twitter"></i></div>
+                      <span>Twitter</span>
+                            </div>
+                      <div class="button">
+                              <div class="icon">
+                      <i class="fab fa-instagram"></i></div>
+                      <span>Instagram</span>
+                            </div>
+                      <div class="button">
+                              <div class="icon">
+                      <i class="fab fa-github"></i></div>
+                      <span>Github</span>
+                            </div>
+                      <div class="button">
+                              <div class="icon">
+                      <i class="fab fa-youtube"></i></div>
+                      <span>YouTube</span>
+                            </div>
+                            
+                      </div>
+                      <div class="contact_us_div">
+                          
+                      <form action="/action_page.php" style="max-width:500px;margin:auto">
+                        <h2>Register Form</h2>
+                        <div class="contact_us_field">
+                          <i class="fa fa-user contact_icon"></i>
+                          <label for="name"></label><br>
+                          <input type="text" name="name" class="form-control contact_us_input_field" placeholder="Enter Your Name" required style="border-radius: 0!important;">
+                        </div>
+                      
+                        <div class="contact_us_field" style="width: 100%; height: max-content;">
+                          <i class="fa fa-envelope contact_icon"></i>
+                          <label for="email"></label><br>
+                          <input type="email" name="email" class="form-control contact_us_input_field" placeholder="Enter Your Email" required style="border-radius: 0!important;"><br>
+                        </div>
+                        
+                        <div class="contact_us_field">
+                          <i class="fa fa-phone contact_icon"></i>
+                          <label for="phone"></label><br>
+                          <input type="tel" name="phone" class="form-control contact_us_input_field" placeholder="Enter Your Phone" required style="border-radius: 0!important;"><br>
+                        </div>
+                        
+                          <div class="contact_us_field">
+                          <i class="fa fa-comment contact_icon"></i>
+                              <label for="message"></label><br>
+                              <textarea name="msg" class="form-control contact_us_input_field" placeholder="Enter Your PUBG Id Name....." required style="border-radius: 0!important;"></textarea><br>
+                        </div>
+                        <input type="submit" name="submit" value="Send " class="form-control submit btn">
+                      </form>
+                      </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>    
+
+
+</body>
+<script src="JS/Main.js"></script>
+<script src="JS/Typeing.js"></script>
+<script src="JS/Chrome.js"></script>
+<script src="JS/About.js"></script>
+<script src="JS/Education.js"></script>
+<script src="JS/Project.js"></script>
+<script src="JS/Skills.js"></script>
+<script src="JS/Contact.js"></script>
+<script>
+var i = 0;
+function snackbar_alert() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+    </script>
+
+</html>

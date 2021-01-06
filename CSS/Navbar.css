@@ -1,0 +1,52 @@
+
+.navbar_div {
+  overflow: auto;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 9999999999;
+}
+
+.navbar_div a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  width:25%;
+}
+
+.navbar_div a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar_div a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+#t_o_g_id{
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar_div a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar_div{
+    display: block;
+    /* margin-top: 50px; */
+  }
+  #t_o_g_id{
+    display: block;
+  }
+  
+}
