@@ -1,4 +1,6 @@
-
+html{
+  scroll-behavior: smooth!important;
+}
 .main{
     width: 100vmax;
     height: 100vmax;
@@ -17,7 +19,8 @@
     #about, #education,#project,#skills,#contact{
       width: 100%!important;
       height: 100%!important;
-      margin-bottom: 50px!important;
+      margin-bottom: 70px!important;
+      display: block!important;
     }
     #about_boot,#education_boot,#project_boot,#skills_boot,#contact_boot{
         padding: 12px;
@@ -32,6 +35,6 @@
     display: none;
   }
   .fst{
-    margin-bottom: 50px;
+    margin-bottom: 50px!important;
   }
 }

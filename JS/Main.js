@@ -34,31 +34,31 @@ $(document).ready(function() {
     }); });
     $(".welcome").click(function(){
         $("#divResize").slideToggle("slow");
-        navbar_toggle()
+        
     });
     $(".about_cls").click(function(){
         $("#about").slideToggle("slow");
-        navbar_toggle()
+        
     });
     $(".education_cls").click(function(){
         $("#education").slideToggle("slow");
         education_shade()
-        navbar_toggle()
+        
     });
     $(".project_cls").click(function(){
         $("#project").slideToggle("slow");
         project_shade()
-        navbar_toggle()
+        
     });
     $(".skills_cls").click(function(){
         $("#skills").slideToggle("slow");
         skill_shade()
-        navbar_toggle()
+        
     });
     $(".contact_cls").click(function(){
         $("#contact").slideToggle("slow");
         contact_shade()
-        navbar_toggle()
+        
     });
     $("#t_o_g_id").click(function(){
         $(".t_o_g").slideToggle("slow");
@@ -75,10 +75,31 @@ $( function() {
     });
     } );
 
-function navbar_toggle(){
-    if(document.getElementById("t_o_g_id")=="block"){
-$(".t_o_g").slideToggle("slow");
-    }
-        
-    
+
+
+
+var btn = $('#t_o_g_id2');
+
+$(window).scroll(function() {
+if ($(window).scrollTop() > 150) {
+    btn.addClass('show');
+} else {
+    btn.removeClass('show');
 }
+});
+
+btn.on('click', function(e) {
+e.preventDefault();
+$('html, body').animate({scrollTop:0}, '300');
+});
+
+setTimeout(function(){ 
+    if($(window).width() <= 1204){
+        // do your stuff
+        education_shade()
+        contact_shade()
+        project_shade()
+        skill_shade()
+      }
+ }, 1000);
+

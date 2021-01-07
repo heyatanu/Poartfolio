@@ -23,7 +23,7 @@ function education_shade(){
 }
 
 var ees = 0;
-var educationtxt = 'C:\Users\Atanu Dutta> Checking ............'; /* The text */
+var educationtxt = 'C>Users>root>host> Checking  ............'; /* The text */
 var educationpeed = 50; /* The educationpeed/duration of the effect in milliseconds */
 
 function educationtypeWriter() {

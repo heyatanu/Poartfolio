@@ -86,6 +86,7 @@
             display: none;
             float: right;
         } 
+
     </style>
 </head>
 <body>
@@ -93,7 +94,8 @@
 
     <div id="snackbar">Some text some message..</div>
     <div class="navbar_div">
-        <a href="#home" class="welcome t_o_g">Home</a>
+        <a href="#conct" id=t_o_g_id2>Home</a>
+        <!-- <a href="#home" class="welcome t_o_g" >Home</a> -->
         <a href="#about"class="about_cls t_o_g">About</a>
         <a href="#education" class="education_cls t_o_g">Education</a>
         <a href="#project" class="project_cls t_o_g">Project</a>
@@ -102,6 +104,7 @@
         <!-- <a href="#contact" onclick="snackbar_alert()">Contact</a> -->
    
         <a href="#conact" id=t_o_g_id>^</a>
+        
       </div>
       
 
@@ -115,7 +118,8 @@
                         <div class="browser-mockup ">
                             <div class="top_bar" style="padding:5px;height: max-content;">
                                 <div class="item1">
-                                    <span class="welcome dot" style="background-color:#f44;"></span>
+                                    <span class=" dot" style="background-color:#f44;"></span>
+                                    <!-- add class welcome to hide and show -->
                                     <span class="dot" style="background-color:#9b3;"></span>
                                     <span class="dot" style="background-color:#fb5;"></span>
                                 </div>
@@ -408,6 +412,10 @@ function snackbar_alert() {
   x.className = "show";
   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
+
+
+
+
     </script>
 
 </html>

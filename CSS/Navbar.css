@@ -37,9 +37,10 @@
 @media screen and (max-width: 1200px) {
   .navbar_div a {
     float: none;
-    display: block;
+    display: none;
     width: 100%;
     text-align: center;
+    padding: 5px;
   }
   .navbar_div{
     display: block;
@@ -48,5 +49,9 @@
   #t_o_g_id{
     display: block;
   }
-  
+
+  .navbar_div a:hover {
+    background: none;
+    color: #4CAF50;
+  }
 }
