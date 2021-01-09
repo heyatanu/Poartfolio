@@ -11,7 +11,9 @@ function contact_shade(){
   document.querySelector(".contact_contant").style.display="grid";
 }, 2500);
 
- 
+setTimeout(function(){
+  document.querySelector("#contactP").style.display="none";
+}, 5000);
 }
 
 var cs = 0;

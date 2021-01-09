@@ -98,7 +98,9 @@ setTimeout(function(){
         // do your stuff
         education_shade()
         contact_shade()
+    
         project_shade()
+    
         skill_shade()
       }
  }, 1000);

@@ -11,7 +11,9 @@ function skill_shade(){
   document.querySelector(".skills_contant").style.display="grid";
 }, 2500);
 
- 
+setTimeout(function(){
+  document.querySelector("#skillP").style.display="none";
+}, 5000);
 }
 
 var ss = 0;

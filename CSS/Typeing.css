@@ -9,12 +9,17 @@
 #divContainer .vscode-mockup .text_area p{
     font-size: 13px!important;
     font-weight: 500!important;
-    color: rgba(17, 183, 198, 0.729);
+    color: rgb(220, 2, 253);
     line-height: 2;
     word-spacing: 4px;
 } 
 #welcometxtmsg{
-    text-shadow: 0 0 10px #00d5ff;  
+    text-shadow: 0 0 10px #ff00a2f4;  
     color: #fff;
     font-weight: 500;
+}
+@media (max-width: 600px){
+    .vs_list{
+        display: none;
+    }
 }

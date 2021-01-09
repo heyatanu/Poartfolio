@@ -10,7 +10,9 @@ function project_shade(){
   $("#projectP").slideToggle("slow");
   document.querySelector(".project_contant").style.display="block";
 }, 2500);
-
+setTimeout(function(){
+  document.querySelector("#projectP").style.display="none";
+}, 5000);
  
 }
 

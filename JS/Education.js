@@ -18,7 +18,9 @@ function education_shade(){
   document.querySelector(".education_contant").style.display="block";
   document.querySelector(".education_contant").style.display="grid";
 }, 2500);
-
+setTimeout(function(){
+  document.querySelector("#educationP").style.display="none";
+}, 5000);
  
 }
 

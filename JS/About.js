@@ -21,7 +21,7 @@ setTimeout(function(){
    }
  }
  var ab_dis = 0;
- var about_dis = 'The about_dis_speed/duration of the effect in milliseconds'; /* The text */
+ var about_dis = 'This is some dis about you . Some ramdom text here .'; /* The text */
  var about_dis_speed = 50; /* The about_dis_speed/duration of the effect in milliseconds */
  
  function about_dis_fun() {
